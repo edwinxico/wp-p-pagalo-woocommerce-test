@@ -13,13 +13,13 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		$this->id = "wowp_pcwpg_pagalocard";
 
 		// Show Title
-		$this->method_title = __( "Pagalo Card", 'wp-pagalocard-woocommerce' );
+		$this->method_title = __( "Pagalo", 'wp-pagalocard-woocommerce' );
 
 		// Show Description
-		$this->method_description = __( "Pagalo Card Payment Gateway Plug-in for WooCommerce", 'wp-pagalocard-woocommerce' );
+		$this->method_description = __( "Pagalo Payment Gateway Plug-in for WooCommerce", 'wp-pagalocard-woocommerce' );
 
 		// vertical tab title
-		$this->title = __( "Pagalo Card", 'wp-pagalocard-woocommerce' );
+		$this->title = __( "Pagalo", 'wp-pagalocard-woocommerce' );
 
 
 		$this->icon = null;
@@ -64,24 +64,24 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 				'default'		=> 'no',
 			),
 			'pc_idenEmpresa' => array(
-				'title'			=> __( 'IdemEmpresa', 'wp-pagalocard-woocommerce' ),
+				'title'			=> __( 'IdenEmpresa', 'wp-pagalocard-woocommerce' ),
 				'type'			=> 'text',
-				'desc_tip'	=> __( 'This is the IdemEmpresa provided by PagaloCard when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
+				'desc_tip'	=> __( 'This is the IdenEmpresa provided by Pagalo when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
 			),
 			'pc_token' => array(
 				'title'			=> __( 'Token', 'wp-pagalocard-woocommerce' ),
 				'type'			=> 'text',
-				'desc_tip'	=> __( 'This is the Token provided by PagaloCard when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
+				'desc_tip'	=> __( 'This is the Token provided by Pagalo when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
 			),
 			'pc_key_public' => array(
 				'title'			=> __( 'API Public Key', 'wp-pagalocard-woocommerce' ),
 				'type'			=> 'text',
-				'desc_tip'	=> __( 'This is the Public Key provided by PagaloCard when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
+				'desc_tip'	=> __( 'This is the Public Key provided by Pagalo when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
 			),
 			'pc_key_secret' => array(
 				'title'			=> __( 'API Secret Key', 'wp-pagalocard-woocommerce' ),
 				'type'			=> 'text',
-				'desc_tip'	=> __( 'This is the API Secret Key provided by PagaloCard when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
+				'desc_tip'	=> __( 'This is the API Secret Key provided by Pagalo when you signed up for an account.', 'wp-pagalocard-woocommerce' ),
 			)
 		);		
 	}
@@ -117,7 +117,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		if ( is_wp_error( $result ) ) {
 			throw new Exception( __( 'There is issue for connectin payment gateway. Sorry for the inconvenience.', 'wp-pagalocard-woocommerce' ) );
 			if ( empty( $result['body'] ) ) {
-				throw new Exception( __( 'PagaloCard\'s Response was not get any data.', 'wp-pagalocard-woocommerce' ) );	
+				throw new Exception( __( 'Pagalo\'s Response was not get any data.', 'wp-pagalocard-woocommerce' ) );	
 			}
 		}
 
@@ -128,7 +128,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		if ( ( $response_body['reasonCode'] == 200 ) || $response_body['reasonCode'] == 100) {
 
 			// Payment successful
-			$customer_order->add_order_note( __( 'PagaloCard complete payment.', 'wp-pagalocard-woocommerce' ) );
+			$customer_order->add_order_note( __( 'Pagalo complete payment.', 'wp-pagalocard-woocommerce' ) );
 												 
 			// paid order marked
 			$customer_order->payment_complete();

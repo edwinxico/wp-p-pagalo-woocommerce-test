@@ -5,7 +5,7 @@
 * @author xicoofficial
 * 
 * Plugin Name: Pagalo - WooCommerce Payment Gateway
-* Plugin URI: https://www.xicoofficial.com/producto/wp-pagalocard-woocommerce/
+* Plugin URI: https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/
 * Description: WooCommerce custom payment gateway integration with Pagalo.
 * Version: 1.3.0
 * Author: XicoOfficial, gtcoders, digitallabs

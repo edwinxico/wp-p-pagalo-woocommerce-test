@@ -41,12 +41,12 @@ After you have your Pagalo account active:
 4. Fill the form with your account information.
 5. Click on save changes and you should be ready to start accepting credit cards with Pagalo Card.
 
-Rember that this plugin works only for purchases from Guatemala and in Guatemalan Quetzals. You can use this data to make the testing:
+Rember that this plugin works only for the Epay mode, and only for purchases from Guatemala and in Guatemalan Quetzals currency. You can use this data to make the testing:
 CC Number: 4000-0000-0000-0416 
 CVV: 123
 Ex date: 08/22
 
-There is also an already tested, fully functional and with more features plugin(support for visacuotas, multiple currencies and countries), at [Coders.club.gt](https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/) that you could purchase to take advantage of the latest features of Pagalo and improve the experience of your customers.
+If you are interested in usgin the Cybersource mode, there is an already tested, fully functional and with more features plugin(support Cybersource, visacuotas, multiple currencies and countries), at [Coders.club.gt](https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/) that you could purchase to take advantage of the latest features of Pagalo and improve the experience of your customers.
 
 
 == Installation ==

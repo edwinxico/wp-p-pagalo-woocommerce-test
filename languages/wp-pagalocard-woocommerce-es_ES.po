@@ -1,55 +1,55 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Pagalo Card - WooCommerce Payment Gateway\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-06 09:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2020-09-06 09:27+0000\n"
+"Last-Translator: Edwin Xico\n"
+"Language-Team: Español\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
 
 #: wp-pagalocard-woocommerce.php:52
 msgid "Settings"
-msgstr ""
+msgstr "Configuraciones"
 
 #: wp-pagalocard-woocommerce.php:66
 msgid "Cardholder Name"
-msgstr ""
+msgstr "Titular de la tarjeta"
 
 #: wp-pagalocard-woocommerce.php:68
 msgid "CARDHOLDER NAME"
-msgstr ""
+msgstr "TITULAR DE LA TARJETA"
 
 #: wp-pagalocard-woocommerce.php:71
 msgid "Card Number"
-msgstr ""
+msgstr "Número de la Tarjeta"
 
 #: wp-pagalocard-woocommerce.php:76
 msgid "Expiry (MM/YY)"
-msgstr ""
+msgstr "Expira (MM/AA)"
 
 #: wp-pagalocard-woocommerce.php:78
 msgid "MM / AA"
-msgstr ""
+msgstr "MM / AA"
 
 #: wp-pagalocard-woocommerce.php:81
 msgid "Card Code"
-msgstr ""
+msgstr "Codigo de Tarjeta"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:16
 #: includes/wp-pagalocard-woocommerce-admin.php:22
 msgid "Pagalo"
-msgstr ""
+msgstr "Pagalo"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:19
 msgid "Pagalo Payment Gateway Plug-in for WooCommerce"
-msgstr ""
+msgstr "Plugin de Pasarela de Pagos de Pagalo para WooCommerce"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:48
 msgid ""
@@ -57,69 +57,80 @@ msgid ""
 "Please contact the store owner for more information or alternative ways to "
 "pay."
 msgstr ""
+"Este sitio esta en modo prueba, por lo que las órdenes no seran procesadas. "
+"Por favor contacta al administrador de la tienda para mayor información o "
+"formas alternativas de pago."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:61
 msgid "Enable / Disable"
-msgstr ""
+msgstr "Activar / Desactivar"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:62
 msgid "Enable this payment gateway"
-msgstr ""
+msgstr "Activar ésta pasarela de pagos"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:67
 msgid "IdenEmpresa"
-msgstr ""
+msgstr "IdenEmpresa"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:69
 msgid ""
 "This is the IdenEmpresa provided by Pagalo when you signed up for an account."
-msgstr ""
+msgstr "Este es el IdenEmpresa provisto por Pagalo al registrar una cuenta."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:72
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:74
 msgid "This is the Token provided by Pagalo when you signed up for an account."
-msgstr ""
+msgstr "Este es el token provisto por Pabalo al registrar una cuenta."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:77
 msgid "API Public Key"
-msgstr ""
+msgstr "Clave API Public"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:79
 msgid ""
 "This is the Public Key provided by Pagalo when you signed up for an account."
 msgstr ""
+"Esta es la clave Publica de la API provista por Pagalo al registrar una "
+"cuenta."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:82
 msgid "API Secret Key"
-msgstr ""
+msgstr "Clave API Secret"
 
 #: includes/wp-pagalocard-woocommerce-admin.php:84
 msgid ""
 "This is the API Secret Key provided by Pagalo when you signed up for an "
 "account."
 msgstr ""
+"Esta es la clave Secret de la API provista por Pagalo al registrar una "
+"cuenta."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:118
 msgid ""
 "There is issue for connectin payment gateway. Sorry for the inconvenience."
 msgstr ""
+"Ocurrió un problema al conectarse con la pasarela de pagos. Lamentamos los "
+"inconvenientes."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:120
 msgid "Pagalo's Response was not get any data."
-msgstr ""
+msgstr "El servicio de Pagalo respondio si ninguna información."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:131
 msgid "Pagalo complete payment."
-msgstr ""
+msgstr "Pago a traves de Pagalo completado."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:143
 msgid ""
 "Payment failed. Please contact the store owner for more information or "
 "alternative ways to pay. "
 msgstr ""
+"Pago fallido. Por favor contacta al administrador de la tienda para mayor "
+"información o formas alternativas de pago."
 
 #: includes/wp-pagalocard-woocommerce-admin.php:161
 #, php-format
@@ -130,24 +141,32 @@ msgid ""
 "more features to ensure a better experience for your customers. The plugin "
 "can be purchased <a href=\"%s\">here</a>."
 msgstr ""
+"<strong>%s</strong> se encuentra activo pero recuerda que es un plugin muy "
+"básico recomendado para pruebas solamente. Siéntete en la libertad de "
+"revisar el código y configurarlo para que funcione con tu sitio web. Aún "
+"mejor, puedes comprar la versión del plugin probada, 100% funcional, y con "
+"mas funcionalidades para asegurar una buena experienca a tus clientes. El "
+"plugin lo puedes comprar <a href=\"%s\">aquí</a>."
 
 #. Name of the plugin
 msgid "Pagalo - WooCommerce Payment Gateway"
-msgstr ""
+msgstr "Pagalo - Pasarela de Pagos para WooCommerce"
 
 #. Description of the plugin
 msgid "WooCommerce custom payment gateway integration with Pagalo."
 msgstr ""
+"Integración personalizada de la pasarela de pagos de WooCommerce con Pagalo"
 
 #. URI of the plugin
 msgid ""
 "https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/"
 msgstr ""
+"https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/"
 
 #. Author of the plugin
 msgid "XicoOfficial, gtcoders, digitallabs"
-msgstr ""
+msgstr "XicoOfficial, gtcoders, digitallabs"
 
 #. Author URI of the plugin
 msgid "https://edwinxico.com"
-msgstr ""
+msgstr "https://edwinxico.com"
