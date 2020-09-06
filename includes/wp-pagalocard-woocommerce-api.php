@@ -24,11 +24,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$date_array = explode("/", str_replace(' ', '', $date_array));
 
 		$this->credit_card_data = array(
-				'nameCard'				=> mb_convert_encoding($_POST['wowp_pcwpg_pagalocard-card-name'], 'HTML-ENTITIES'),
-				'accountNumber'		=> str_replace( array(' ', '-' ), '', $_POST['wowp_pcwpg_pagalocard-card-number'] ),
-				'expirationMonth'	=> $date_array[0],
-				'expirationYear'	=> $date_array[1], 
-				'CVVCard'					=> ( isset( $_POST['wowp_pcwpg_pagalocard-card-cvc'] ) ) ? $_POST['wowp_pcwpg_pagalocard-card-cvc'] : 'no',
+			'nameCard'			=> mb_convert_encoding($_POST['wowp_pcwpg_pagalocard-card-name'], 'HTML-ENTITIES'),
+			'accountNumber'		=> str_replace( array(' ', '-' ), '', $_POST['wowp_pcwpg_pagalocard-card-number'] ),
+			'expirationMonth'	=> $date_array[0],
+			'expirationYear'	=> $date_array[1], 
+			'CVVCard'			=> ( isset( $_POST['wowp_pcwpg_pagalocard-card-cvc'] ) ) ? $_POST['wowp_pcwpg_pagalocard-card-cvc'] : 'no',
 		);
 	}
 
@@ -58,20 +58,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		$cliente= array(
 			'codigo'		=> 'c001',
-			'firstName' => $customer_order->get_billing_first_name(),
-			'lastName'  => $customer_order->get_billing_last_name(),
+			'firstName' 	=> $customer_order->get_billing_first_name(),
+			'lastName'  	=> $customer_order->get_billing_last_name(),
 			'street1'		=> $customer_order->get_billing_address_1(),
 			'phone'			=> $customer_order->get_billing_phone(),
-			'country'		=> $customer_order->get_billing_country(),
+			'country'		=> 'Guatemala',
 			'city'			=> $customer_order->get_billing_city(),
 			'state'			=> $customer_order->get_billing_state(),
-			'postalCode'=> $customer_order->get_billing_postcode(),
+			'postalCode'	=> $customer_order->get_billing_postcode(),
 			'email'			=> $customer_order->get_billing_email(),
-			'ipAddress'	=> $customer_order->get_customer_ip_address(),
+			'ipAddress'		=> $customer_order->get_customer_ip_address(),
 			'Total'			=> $customer_order->get_total(),
 			'fecha_transaccion'=> $customer_order->get_date_created(),
-			'currency'	=> $customer_order->get_currency(),
-		  'deviceFingerprintID' => '',
+			'currency'		=> 'GTQ',
+		  	'deviceFingerprintID' => '',
 		);
 
 		$client_data = json_encode( $cliente );
@@ -89,9 +89,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     	$detalle[] = array(
 				'id_producto'	=> $product->get_product_id(),
 				'cantidad'		=> $product->get_quantity(),
-				'tipo'				=> $product->get_type(),
-				'nombre'			=> $product->get_name(),
-				'precio'			=> get_post_meta( $product->get_product_id(), '_regular_price', true),
+				'tipo'			=> $product->get_type(),
+				'nombre'		=> $product->get_name(),
+				'precio'		=> get_post_meta( $product->get_product_id(), '_regular_price', true),
 				'Subtotal'		=> $product->get_total(),
 			);
 		}

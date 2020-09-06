@@ -104,21 +104,21 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		$data = array('empresa' => $str_empresa, 'cliente' => $str_cliente, 'detalle' => $str_detalle, 'tarjetaPagalo' => $str_tarjeta);
 
 		// Decide which URL to post to
-		$environment_url = 'https://sandbox.pagalocard.com/api/v1/integracionIn/' . $this->pc_token;
+		$environment_url = 'https://app.pagalocard.com/api/v1/integracionpg/' . $this->pc_token;
  
-    $result = wp_remote_post( $environment_url, array( 
-          'method'    => 'POST', 
-          'body'      => json_encode( $data ), 
-          'timeout'   => 90, 
-          'sslverify' => true, 
-          'headers' => array( 'Content-Type' => 'application/json' ) 
+    	$result = wp_remote_post( $environment_url, array( 
+        	'method'    => 'POST', 
+        	'body'      => json_encode( $data ), 
+        	'timeout'   => 90, 
+        	'sslverify' => true, 
+        	'headers' => array( 'Content-Type' => 'application/json' ) 
         ) ); 
 
 		if ( is_wp_error( $result ) ) {
-					throw new Exception( __( 'There is issue for connectin payment gateway. Sorry for the inconvenience.', 'wp-pagalocard-woocommerce' ) );
-				if ( empty( $result['body'] ) ) {
-					throw new Exception( __( 'PagaloCard\'s Response was not get any data.', 'wp-pagalocard-woocommerce' ) );	
-				}
+			throw new Exception( __( 'There is issue for connectin payment gateway. Sorry for the inconvenience.', 'wp-pagalocard-woocommerce' ) );
+			if ( empty( $result['body'] ) ) {
+				throw new Exception( __( 'PagaloCard\'s Response was not get any data.', 'wp-pagalocard-woocommerce' ) );	
+			}
 		}
 
 		// get body response while get not error
@@ -158,7 +158,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 
 	public function do_ssl_check() {
 		if( $this->enabled == "yes") {
-			echo "<div class=\"error\"><p>". sprintf( __( "<strong>%s</strong> is enabled but remember that this plugin is for testing proposes only. Feel free to hack into the code and make it work for your store or better yet, purchase an already tested, fully functional and with more features to ensure a better experience for your clients. The plugin can be purchased <a href=\"%s\">here</a>.", 'wp-pagalocard-woocommerce' ), $this->method_title, 'https://www.xicoofficial.com/producto/wp-pagalocard-woocommerce/' ) ."</p></div>";
+			echo "<div class=\"error\"><p>". sprintf( __( "<strong>%s</strong> is enabled but remember that this plugin is for testing proposes only. Feel free to hack into the code and make it work for your store or better yet, purchase an already tested, fully functional and with more features to ensure a better experience for your customers. The plugin can be purchased <a href=\"%s\">here</a>.", 'wp-pagalocard-woocommerce' ), $this->method_title, 'https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/' ) ."</p></div>";
     }     
   } 
 
