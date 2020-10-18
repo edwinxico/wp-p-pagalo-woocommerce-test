@@ -2,10 +2,10 @@
 Contributors: XicoOfficial, gtcoders, digitallabs
 Donate link: https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/
 Tags: pagalo, pagalo guatemala, págalo, págalo guatemala, visanet, visanet guatemala, credomatic, credomatic guatemala, pagalocard, custom gateway, woocommerce payment gateway, pagalo card, woocommerce, págalo card, payment gateway
-Requires at least: 3.8
+Requires at least: 4.6
 Requires PHP: 5.2.4
 Tested up to: 5.5
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

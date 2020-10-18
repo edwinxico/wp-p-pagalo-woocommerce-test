@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pagalo Card - WooCommerce Payment Gateway\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-06 09:22+0000\n"
+"POT-Creation-Date: 2020-10-18 05:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -51,84 +51,87 @@ msgstr ""
 msgid "Pagalo Payment Gateway Plug-in for WooCommerce"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:48
+#: includes/wp-pagalocard-woocommerce-admin.php:60
 msgid ""
-"This website is on test mode, so orders are not going to be processed. "
-"Please contact the store owner for more information or alternative ways to "
-"pay."
+"You are using the <strong>Pagalo for WooCommerce</strong> plugin developed "
+"by <a href=\"https://digitallabs.agency\" target=\"_blank\">Digital Labs</a>."
+" If you need assistance configuring the plugin, help with your eCommerce "
+"site or just want to say hi, feel free to contact us <a href=\"https:"
+"//digitallabs.agency/contacto\" target=\"_blank\">here</a>. We will be happy "
+"to work with you."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:61
+#: includes/wp-pagalocard-woocommerce-admin.php:68
 msgid "Enable / Disable"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:62
+#: includes/wp-pagalocard-woocommerce-admin.php:69
 msgid "Enable this payment gateway"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:67
+#: includes/wp-pagalocard-woocommerce-admin.php:74
 msgid "IdenEmpresa"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:69
+#: includes/wp-pagalocard-woocommerce-admin.php:76
 msgid ""
 "This is the IdenEmpresa provided by Pagalo when you signed up for an account."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:72
+#: includes/wp-pagalocard-woocommerce-admin.php:79
 msgid "Token"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:74
+#: includes/wp-pagalocard-woocommerce-admin.php:81
 msgid "This is the Token provided by Pagalo when you signed up for an account."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:77
+#: includes/wp-pagalocard-woocommerce-admin.php:84
 msgid "API Public Key"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:79
+#: includes/wp-pagalocard-woocommerce-admin.php:86
 msgid ""
 "This is the Public Key provided by Pagalo when you signed up for an account."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:82
+#: includes/wp-pagalocard-woocommerce-admin.php:89
 msgid "API Secret Key"
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:84
+#: includes/wp-pagalocard-woocommerce-admin.php:91
 msgid ""
 "This is the API Secret Key provided by Pagalo when you signed up for an "
 "account."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:118
+#: includes/wp-pagalocard-woocommerce-admin.php:125
 msgid ""
 "There is issue for connectin payment gateway. Sorry for the inconvenience."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:120
+#: includes/wp-pagalocard-woocommerce-admin.php:127
 msgid "Pagalo's Response was not get any data."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:131
+#: includes/wp-pagalocard-woocommerce-admin.php:138
 msgid "Pagalo complete payment."
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:143
+#: includes/wp-pagalocard-woocommerce-admin.php:150
 msgid ""
 "Payment failed. Please contact the store owner for more information or "
 "alternative ways to pay. "
 msgstr ""
 
-#: includes/wp-pagalocard-woocommerce-admin.php:161
+#: includes/wp-pagalocard-woocommerce-admin.php:168
 #, php-format
 msgid ""
-"<strong>%s</strong> is enabled but remember that this plugin is for testing "
-"proposes only. Feel free to hack into the code and make it work for your "
-"store or better yet, purchase an already tested, fully functional and with "
-"more features to ensure a better experience for your customers. The plugin "
-"can be purchased <a href=\"%s\">here</a>."
+"<strong>%s</strong> is enabled but remember that this plugin is for EPAY "
+"mode only. Feel free to hack into the code and make it work using "
+"Cybersource for your store or better yet, purchase an already tested, fully "
+"functional and with more features to ensure a better experience for your "
+"customers. The plugin can be purchased <a href=\"%s\">here</a>."
 msgstr ""
 
 #. Name of the plugin

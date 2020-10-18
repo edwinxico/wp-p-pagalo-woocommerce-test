@@ -45,14 +45,21 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 
 		// Check if the keys have been configured
 		if( !is_admin() ) {
-				wc_add_notice( __("This website is on test mode, so orders are not going to be processed. Please contact the store owner for more information or alternative ways to pay.", "wp-pagalocard-woocommerce") );
+				// wc_add_notice( __("This website is on test mode, so orders are not going to be processed. Please contact the store owner for more information or alternative ways to pay.", "wp-pagalocard-woocommerce") );
 		}
 
 		// Save settings
 		if ( is_admin() ) {
 			add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
-		}		
+		}	
+		add_action('admin_notices', array( $this, 'dl_pc_admin_notice' ));	
 	} // Here is the  End __construct()
+
+	public function dl_pc_admin_notice(){
+    	echo '<div class="notice notice-info">
+			<p>' . __('You are using the <strong>Pagalo for WooCommerce</strong> plugin developed by <a href="https://digitallabs.agency" target="_blank">Digital Labs</a>. If you need assistance configuring the plugin, help with your eCommerce site or just want to say hi, feel free to contact us <a href="https://digitallabs.agency/contacto" target="_blank">here</a>. We will be happy to work with you.', 'wp-pagalocard-woocommerce') . '</p>
+			</div>';
+	}
 
 	// administration fields for specific Gateway
 	public function init_form_fields() {
@@ -158,7 +165,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 
 	public function do_ssl_check() {
 		if( $this->enabled == "yes") {
-			echo "<div class=\"error\"><p>". sprintf( __( "<strong>%s</strong> is enabled but remember that this plugin is for testing proposes only. Feel free to hack into the code and make it work for your store or better yet, purchase an already tested, fully functional and with more features to ensure a better experience for your customers. The plugin can be purchased <a href=\"%s\">here</a>.", 'wp-pagalocard-woocommerce' ), $this->method_title, 'https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/' ) ."</p></div>";
+			echo "<div class=\"notice\"><p>". sprintf( __( "<strong>%s</strong> is enabled but remember that this plugin is for EPAY mode only. Feel free to hack into the code and make it work using Cybersource for your store or better yet, purchase an already tested, fully functional and with more features to ensure a better experience for your customers. The plugin can be purchased <a href=\"%s\">here</a>.", 'wp-pagalocard-woocommerce' ), $this->method_title, 'https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/' ) ."</p></div>";
     }     
   } 
 
