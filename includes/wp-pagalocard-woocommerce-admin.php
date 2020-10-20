@@ -16,10 +16,10 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		$this->method_title = __( "Pagalo", 'wp-pagalocard-woocommerce' );
 
 		// Show Description
-		$this->method_description = __( "Pagalo Payment Gateway Plug-in for WooCommerce", 'wp-pagalocard-woocommerce' );
+		$this->method_description = __( "Take credit card payments on your store using Pagalo.", 'wp-pagalocard-woocommerce' );
 
 		// vertical tab title
-		$this->title = __( "Pagalo", 'wp-pagalocard-woocommerce' );
+		$this->title = __( "Credit Cards (Visa - Mastercard)", 'wp-pagalocard-woocommerce' );
 
 
 		$this->icon = null;
