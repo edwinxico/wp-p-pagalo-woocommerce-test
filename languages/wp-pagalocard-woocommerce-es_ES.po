@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pagalo Card - WooCommerce Payment Gateway\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 05:22+0000\n"
-"PO-Revision-Date: 2020-10-18 05:24+0000\n"
+"POT-Creation-Date: 2020-10-20 22:35+0000\n"
+"PO-Revision-Date: 2020-10-20 22:38+0000\n"
 "Last-Translator: Edwin Xico\n"
 "Language-Team: Español\n"
 "Language: es_ES\n"
@@ -154,13 +154,13 @@ msgstr ""
 "de tus clientes. El plugin lo puedes adquirir <a href=\"%s\">aqui</a>."
 
 #. Name of the plugin
-msgid "Pagalo - WooCommerce Payment Gateway"
-msgstr "Pagalo - Pasarela de Pagos para WooCommerce"
+msgid "Payment Gateway for Pagalo on WooCommerce"
+msgstr ""
+"Pasarela de pago para Pagalo en WooCommerce\n"
 
 #. Description of the plugin
-msgid "WooCommerce custom payment gateway integration with Pagalo."
-msgstr ""
-"Integración personalizada de la pasarela de pagos de WooCommerce con Pagalo"
+msgid "Take credit card payments on your store using Pagalo."
+msgstr "Acepta pagos con tarjetas de crédito en tu tienda usando Pagalo."
 
 #. URI of the plugin
 msgid ""

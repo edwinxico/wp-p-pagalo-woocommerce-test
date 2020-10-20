@@ -111,7 +111,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 		$data = array('empresa' => $str_empresa, 'cliente' => $str_cliente, 'detalle' => $str_detalle, 'tarjetaPagalo' => $str_tarjeta);
 
 		// Decide which URL to post to
-		$environment_url = 'https://app.pagalocard.com/api/v1/integracionpg/' . $this->pc_token;
+		$environment_url = 'https://app.pagalocard.com/api/v1/integracion/' . $this->pc_token;
  
     	$result = wp_remote_post( $environment_url, array( 
         	'method'    => 'POST', 
@@ -152,7 +152,7 @@ class wowp_pcwpg_pagalocard extends WC_Payment_Gateway_CC {
 				wc_add_notice( __('Payment failed. ') . $response_body['decision'] . ' - ' . $response_body['descripcion'] . '.', 'error' );
 			}
 
-			wc_add_notice( 'Full response: ' . json_encode($response_body) );
+			// wc_add_notice( 'Full response: ' . json_encode($response_body) );
 
 		}
 

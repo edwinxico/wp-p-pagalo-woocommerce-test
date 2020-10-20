@@ -20,15 +20,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	public function __construct() {
 		$this->wc_pre_30 = version_compare( WC_VERSION, '3.0.0', '<' );
 
-		$date_array = $_POST['wowp_pcwpg_pagalocard-card-expiry'];
+		$date_array = sanitize_text_field( $_POST['wowp_pcwpg_pagalocard-card-expiry'] );
 		$date_array = explode("/", str_replace(' ', '', $date_array));
 
 		$this->credit_card_data = array(
-			'nameCard'			=> mb_convert_encoding($_POST['wowp_pcwpg_pagalocard-card-name'], 'HTML-ENTITIES'),
-			'accountNumber'		=> str_replace( array(' ', '-' ), '', $_POST['wowp_pcwpg_pagalocard-card-number'] ),
+			'nameCard'			=> mb_convert_encoding( sanitize_text_field( $_POST['wowp_pcwpg_pagalocard-card-name'] ), 'HTML-ENTITIES'),
+			'accountNumber'		=> str_replace( array(' ', '-' ), '', sanitize_text_field( $_POST['wowp_pcwpg_pagalocard-card-number'] ) ),
 			'expirationMonth'	=> $date_array[0],
 			'expirationYear'	=> $date_array[1], 
-			'CVVCard'			=> ( isset( $_POST['wowp_pcwpg_pagalocard-card-cvc'] ) ) ? $_POST['wowp_pcwpg_pagalocard-card-cvc'] : 'no',
+			'CVVCard'			=> ( isset( $_POST['wowp_pcwpg_pagalocard-card-cvc'] ) ) ? sanitize_text_field( $_POST['wowp_pcwpg_pagalocard-card-cvc'] ) : 'no',
 		);
 	}
 

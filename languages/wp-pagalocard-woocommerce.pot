@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pagalo Card - WooCommerce Payment Gateway\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 05:22+0000\n"
+"POT-Creation-Date: 2020-10-20 22:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -135,11 +135,11 @@ msgid ""
 msgstr ""
 
 #. Name of the plugin
-msgid "Pagalo - WooCommerce Payment Gateway"
+msgid "Payment Gateway for Pagalo on WooCommerce"
 msgstr ""
 
 #. Description of the plugin
-msgid "WooCommerce custom payment gateway integration with Pagalo."
+msgid "Take credit card payments on your store using Pagalo."
 msgstr ""
 
 #. URI of the plugin

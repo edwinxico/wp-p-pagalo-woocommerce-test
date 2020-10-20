@@ -1,11 +1,11 @@
-=== Connect Pagalo and WooCommerce ===
+=== Payment Gateway for Pagalo on WooCommerce ===
 Contributors: XicoOfficial, gtcoders, digitallabs
 Donate link: https://coders.store.gt/producto/wordpress-plugins/wp-pagalocard-woocommerce/
-Tags: pagalo, pagalo guatemala, págalo, págalo guatemala, visanet, visanet guatemala, credomatic, credomatic guatemala, pagalocard, custom gateway, woocommerce payment gateway, pagalo card, woocommerce, págalo card, payment gateway
+Tags: pagalo, pagalo guatemala, págalo, págalo guatemala, visanet, visanet guatemala, credomatic, credomatic guatemala, pagalocard, custom gateway, woocommerce payment gateway, pagalo card, woocommerce, págalo card, payment gateway, visanet, visa
 Requires at least: 4.6
 Requires PHP: 5.2.4
 Tested up to: 5.5
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,7 +14,7 @@ This plugin allows your store to make payments via PagaloCard service.
 
 == Description ==
 
-= Connect Pagalo and WooCommerce =
+= Pagalo - WooCommerce Payment Gateway =
 
 This is a pluging to receive payments with your woocommerce store through [Pagalo](https://pagalo.gt/) payment gateway. If the transaction is successful the order status will be changed to “processing”. If the payment charge failed the order status will be changed to “cancelled”. If something is wrong with the connection between your server and the Pagalo server the order status will be changed to “on-hold”. After successful transaction the customer is redirected to the default WP thank you page.
 
@@ -87,6 +87,9 @@ We encourage you to hack into the code and make it work for your store. If you w
 3. The checkout page with the Pagalo payment credit card form.
 
 == Changelog ==
+
+= 1.3.3 =
+* - Sanitize, Escape, and Validate
 
 = 1.3.2 =
 * - Update icon, banners, readme display name and description to comply with new guidelines
