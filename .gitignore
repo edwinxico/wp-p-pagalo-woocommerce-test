@@ -1,2 +1,3 @@
 *.pot~
 *.po~
+sftp-config.json
