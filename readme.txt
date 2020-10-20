@@ -88,7 +88,7 @@ We encourage you to hack into the code and make it work for your store. If you w
 
 == Changelog ==
 
-= 1.3.1 =
+= 1.3.2 =
 * - Update icon, banners, readme display name and description to comply with new guidelines
 
 = 1.3.0 =
